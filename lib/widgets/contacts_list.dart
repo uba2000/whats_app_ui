@@ -23,6 +23,11 @@ class ContactsList extends StatelessWidget {
                 style: const TextStyle(fontSize: 15),
               ),
             ),
+            leading: CircleAvatar(
+              backgroundImage: NetworkImage(
+                info[index]['profilePic'].toString(),
+              ),
+            ),
           );
         },
       ),
